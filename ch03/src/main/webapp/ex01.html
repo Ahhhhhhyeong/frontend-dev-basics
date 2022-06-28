@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>마진과 패딩</title>
 <style type="text/css">
+* { margin: 0; padding: 0; }
 body {
 	font-family: "돋움", "맑은 고딕";
 	font-size: 0.8em;
@@ -14,12 +15,53 @@ body {
 	border: 1px solid #666;
 	width: 300px;
 	background-color: #FFC;
+	cursor: pointer;
+	
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	
+	/* padding: 10px 20px 30px 40px; ->  T R B L */
+	/* padding: 10px 20px 30px; -> T (R,B) L */
+	/* padding: 10px 20px; -> (T,B) (R,L) */
+	
+	
+	margin: 100px auto 300px auto; /* T R B L */
+	/* margin: 100px auto 300px;  T (R,L) B */
+	/* margin: 100px auto;  (T,B) (R,L) */
 }
 </style>
+<script type="text/javascript">
+	
+	window.onload = () =>{ // dom 생성
+		elDev = document.getElementById("box");
+//		marginTop = parseInt(elDev.style.dmarginTop);
+//		console.log(marginTop);
+		elDev.onclick = function(){
+			console.log("click");
+		};
+	};
+	
+	// setTimeout(function(){
+	// 	console.log("time out!"); // call back / 비동기 처리 
+	// }, 1000);
+	
+	count = 0;
+	intervalId = setInterval(function(){ // 1초에 time out!! 한 번씩 찍힘
+		console.log("time out!!");
+		count++;
+		if(count == 10){
+			clearInterval(intervalId);
+		}
+	}, 1000);
+
+</script>
+
 </head>
 
 <body>
-	<div class="box1">
+	<div class="box1" id="box" style="margin-top:100px">
 		CSS에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이 어떻게 적용되는지 확인해 보겠습니다.
 	</div>
 </body>
