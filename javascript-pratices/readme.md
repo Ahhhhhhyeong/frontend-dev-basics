@@ -14,6 +14,7 @@
 8. [ex08.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex08.js) : 자바스크립트 객체III: 확장
 9. [ex09.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex09.js) : 자바스크립트 객체IV: prototype 기반의 상속과 오버라이딩
 10. [ex10.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex10.js) : 배열(Array)
-
+11. [ex10.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex11.js) : Array 객체 함수(Array.prototype.*)
+12. [ex10.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex12.js) : Array 확장 (prototype 기반의 확장) / List 함수 추가
 ---
 ## es6

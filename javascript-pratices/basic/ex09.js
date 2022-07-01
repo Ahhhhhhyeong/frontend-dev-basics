@@ -18,6 +18,11 @@ var o = new MyObject('마이콜', 30);
 o.school = 'BIPA';
 o.info();
 
+
+
+
+
+
 // MyObject 객체 생성2
 var o2 = new MyObject('둘리', 10);
 o2.info = function() {
