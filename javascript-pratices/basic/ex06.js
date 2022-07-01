@@ -58,4 +58,4 @@
  // 통신(AJAX)에서 데이터 교환의 포맷으로 JSON을 사용한다.
  var response = "{ name: '둘리', email: 'dooly@mysite.com' }";
  var userVo = eval("("+ response +")"); // 권하지않음
- console.log(userVo);
+ console.log(userVo);   
