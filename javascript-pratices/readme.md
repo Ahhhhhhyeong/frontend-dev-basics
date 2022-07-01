@@ -16,6 +16,8 @@
 10. [ex10.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex10.js) : 배열(Array)
 11. [ex11.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex11.js) : Array 객체 함수(Array.prototype.*)
 12. [ex12.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex12.js) : Array 확장 (prototype 기반의 확장) / List 함수 추가
-12. [ex13.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex13.js) : string primitive type과 (String.prototype.*)
+13. [ex13.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex13.js) : string primitive type과 (String.prototype.*)
+14. [ex14.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex14.js) : URL 다루기
+15. [ex15.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex15.js) : Date 객체 메소드 (Date.prototype.*)
 ---
 ## es6

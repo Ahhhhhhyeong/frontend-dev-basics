@@ -24,8 +24,18 @@ console.log(str6);
 // 객체 함수
 const str7 = 'string1 string2 string 3';
 
-const index = str7.indexOf("string2");
+const index = str7.indexOf("string2"); // 8
 console.log(index);
 
-const index2 = str7.indexOf("String4");
+const index2 = str7.indexOf("String4"); // -1
 console.log(index2);
+
+const str8 = str7.substring(10, 13/* last index-1 */);
+console.log(str8);
+
+const a = str7.split(" ");
+console.log(a);
+
+const str9 = "abcdef";
+const b = str9.split(":");
+console.log(b);
