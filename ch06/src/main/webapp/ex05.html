@@ -3,11 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+	var el = document.getElementById("header-3");
+	console.log("before dom loaded: " + el);
+
+/* 	window.onload = function(){
+		var el = document.getElementById("header-3");
+		console.log("before dom loaded: " + el);
+	} */
+
+	window.addEventListener("load", function(){
+		// Listner를 여러개 만들 수 있음
+		var el = document.getElementById("header-3");
+		console.log("before dom loaded: " + el);
+	});
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>
 	<h2>1. HTML Element(Tag)</h2>
 	<h3 id="header-3">Step1</h3>
+	<script> alert("step3") </script>
 	<h3>Step3</h3>
 </body>
 </html>
