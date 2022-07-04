@@ -19,5 +19,7 @@
 13. [ex13.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex13.js) : string primitive type과 (String.prototype.*)
 14. [ex14.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex14.js) : URL 다루기
 15. [ex15.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex15.js) : Date 객체 메소드 (Date.prototype.*)
+16. [ex16.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex16.js) : function 타입의 객체
+17. [ex17.js](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/javascript-pratices/basic/ex17.js) : 정리
 ---
 ## es6
