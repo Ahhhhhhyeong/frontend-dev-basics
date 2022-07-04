@@ -7,23 +7,24 @@
 	window.addEventListener("load", function(){
 		var imgElement = document.createElement("img");
 
-		// setAttribute 사용
-		// 표준 attribute <=> property 	(O)
+		// 표준 attribute[prop(o)] 비표준 attribute[prop(x)] 를 읽기/쓰기
+		// getAttribute/setAttribute 를 사용한다
 		imgElement.setAttribute("src", "https://obj-sg.thewiki.kr/data/63696e6e616d6f726f6c6c2e676966.gif");
 		imgElement.setAttribute("style", "width: 200px");
 		imgElement.setAttribute("alt" , '시나모롤');
-		imgElement.setAttribute("title" , 'Hello 시나모롤');
 		
-		// property => 표준 Attribute 	(O)
+		imgElement.setAttribute("no1", 10);	    // 비표준 속성은 사용할 때 prefix-data
+		
+		imgElement['no2'] = 10;					// 비표준 속성은 사용할 때 prefix 'data-'를 달아 data-no2로 사용한다ㅏ.
 		imgElement['title'] = 'Hello 시나모롤';
-				
-		// property => 비표준 Attribute (X)
-		imgElement['no'] = 10; 					// property
-		imgElement.setAttribute("data-no", 10);	
+
+		e.
+
 		setTimeout(() => {
 			document.body.appendChild(imgElement);
-			console.log(imgElement['no'], imgElement.getAttribute("no"));
-			console.log(imgElement['data-no'], imgElement.getAttribute("data-no"));
+			console.log(imgElement.alt, imgElement.no1);
+			console.log(imgElement.getAttribute("no2"), imgElement.getAttribute("title"));
+			console.log(imgElement.getAttribute("data-no3"));
 		}, 2000);
 	
 	});
@@ -32,6 +33,5 @@
 <body>
 	<h1>DOM(Document Object Model)</h1>
 	<h2>3. HTML Element 속성 조작하기2</h2>
-	<img data-no='' data-name='' data-email='' />
 </body>
 </html>

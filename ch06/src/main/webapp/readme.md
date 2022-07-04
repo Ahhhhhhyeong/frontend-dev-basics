@@ -31,7 +31,7 @@ var BrowserDetect = {
 => bloolean 타입으로 번질 수 있다. 
 
 ---
-## [용어정리](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/ch06/src/main/webapp/ex05.html)
+# [용어정리](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/ch06/src/main/webapp/ex05.html)
 
 ### 1. 태그(tag)
 1. HTML 문서 안에서 TEXT나 Contents 정의할 때 사용하는 마크업
@@ -43,3 +43,19 @@ var BrowserDetect = {
 
 ### 3. 노드	
 1. DOM Tree의 각각의 요소
+
+---
+# [DOM Event 종류](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/ch06/src/main/webapp/ex10.html)
+1. 마우스
+	- mouseover, mouseout
+	- mousedown -> mouseup -> click
+	- mousedown -> mouseup -> click --- mousedown -> mouseup -> click -> dblclick
+2. 키보드
+	- keydown -> keyup -> keypress
+3. form
+	- submit
+4. input
+	- focus, blur, change
+5. touch (모바일)
+	
+# [DOM Event 용어 정리](#)
