@@ -2,10 +2,36 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>HTML Element 속성 조작하기2</title>
+<script>
+	window.addEventListener("load", function(){
+		var imgElement = document.createElement("img");
+
+		// setAttribute 사용
+		// 표준 attribute <=> property 	(O)
+		imgElement.setAttribute("src", "https://obj-sg.thewiki.kr/data/63696e6e616d6f726f6c6c2e676966.gif");
+		imgElement.setAttribute("style", "width: 200px");
+		imgElement.setAttribute("alt" , '시나모롤');
+		imgElement.setAttribute("title" , 'Hello 시나모롤');
+		
+		// property => 표준 Attribute 	(O)
+		imgElement['title'] = 'Hello 시나모롤';
+				
+		// property => 비표준 Attribute (X)
+		imgElement['no'] = 10; 					// property
+		imgElement.setAttribute("data-no", 10);	
+		setTimeout(() => {
+			document.body.appendChild(imgElement);
+			console.log(imgElement['no'], imgElement.getAttribute("no"));
+			console.log(imgElement['data-no'], imgElement.getAttribute("data-no"));
+		}, 2000);
+	
+	});
+	</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>
 	<h2>3. HTML Element 속성 조작하기2</h2>
+	<img data-no='' data-name='' data-email='' />
 </body>
 </html>

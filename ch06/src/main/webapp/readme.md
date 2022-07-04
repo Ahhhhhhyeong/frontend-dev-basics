@@ -27,6 +27,8 @@ var BrowserDetect = {
     ...
 }
 ```
+=> 브라우저 서치하는 함수
+=> bloolean 타입으로 번질 수 있다. 
 
 ---
 ## [용어정리](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/ch06/src/main/webapp/ex05.html)
