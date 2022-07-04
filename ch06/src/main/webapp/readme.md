@@ -1,5 +1,4 @@
-# 0704 JS 정리
-Browse Programming I
+# Browse Programming I
 - DOM
 - BOM
 - XmlHttpRequest
@@ -10,8 +9,8 @@ Browse Programming I
 
 # JS Library
 ### jQuery
-![image](https://user-images.githubusercontent.com/50813232/177063705-c972c7f2-dc94-4d1e-b366-009e4ebc696d.png)
-![image](https://user-images.githubusercontent.com/50813232/177063794-e8735754-a652-4335-86ec-721a091e7d70.png)
+![image](https://user-images.githubusercontent.com/50813232/177063705-c972c7f2-dc94-4d1e-b366-009e4ebc696d.png)   
+![image](https://user-images.githubusercontent.com/50813232/177063794-e8735754-a652-4335-86ec-721a091e7d70.png)   
 **node = JS 엔진**   
 ---
 ### brower-detect
@@ -59,3 +58,32 @@ var BrowserDetect = {
 5. touch (모바일)
 	
 # [DOM Event 용어 정리](#)
+1. Event Name
+	- load, Click, mouseDown, submit, blur
+
+2. Event Attribute
+	- DOM Event Model Level0
+	- onclick, onload, onmousedown, onsubmit, ...
+
+3. Event Listener
+	- DOM Event Model Level2
+	- function(){...}
+
+4. DOM Event Model
+	- DOM HTML Element의 Event Handler를 설정하는 방법에 대한 표준 
+	- DOM Event Model Level0
+		1. inline
+			- 태그안에 Event Attribute(ex. onclick)에 JavaScript 코드를 설정하는 방식
+			- onclick='js코드' 
+			- 웹표준 위배함 
+
+		2. basic
+			- 고전적인 이벤트 처리 방식
+			- element.onclick = function(){...}
+			- 문제점은 Event Handler를 하나 밖에 설정 못하는 것
+	- DOM Event Model Level2
+		1. Observer 패턴을 적용해서 Listener(함수, Event Handler)를 등록하는 방식
+		2. 다중 Event Handler를 등록할 수 있다.
+		3. Listener를 등록/제거 할 수 있는 함수(DOM API)를 제공해야 한다.
+			- MS Internet Explorer(<=8): attachEvent/detachEvent
+			- others(표준브라우저): addEventListener/removeEventListener

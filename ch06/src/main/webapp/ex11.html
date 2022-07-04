@@ -3,11 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.addEventListener("load", function(){
+	document
+		.getElementById('header-2')
+		.onclick = function(){
+			console.log("Event Model Level0 - Basic");
+		}
+	// click 시 addEventListner
+	document
+		.getElementById('header-3')
+		.addEventListener("click", function(){
+			console.log("Event Model Level2");
+		});
+});
+
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>
 	<h2>5. Event 처리</h2>
-	<h3>Event Model Level0 - Inline</h3>
+	<h3 onclick="console.log('Event Model Level0 - Inline')">Event Model Level0 - Inline</h3>
 	<h3 id='header-2'>Event Model Level0 - Basic</h3>
 	<h3 id='header-3'>Event Model Level2</h3>
 </body>
