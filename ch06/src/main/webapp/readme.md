@@ -87,3 +87,8 @@ var BrowserDetect = {
 		3. Listener를 등록/제거 할 수 있는 함수(DOM API)를 제공해야 한다.
 			- MS Internet Explorer(<=8): attachEvent/detachEvent
 			- others(표준브라우저): addEventListener/removeEventListener
+---
+# [기본 이벤트 동작 막기](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/ch06/src/main/webapp/ex11.html)
+
+1. anchor: 버튼이나 메뉴로 사용할 때(click event)
+2. form: validation (submit event)
