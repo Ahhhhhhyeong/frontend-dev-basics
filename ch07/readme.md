@@ -47,3 +47,30 @@
 	});
 ```
 
+## [Simple jQuery 만들기](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/ch07/src/main/webapp/jquery/jquery-simple.js)
+
+[**Simple-jQuery 사용**](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/ch07/src/main/webapp/ex03-3.html)
+```javascript
+$(function() {
+   var $obj = $(".par");
+
+   console.log($obj.length); // 2
+   console.log(typeof($obj)+":"+$obj instanceof Array); // 유사배열
+   console.log($obj[0]);      // HTMLElement 객체에 접근 가능
+
+   $obj.css("color", "red");
+   $obj.click(function() {
+		// 이벤트 핸들러에서의 this는 jQuery Object
+		console.log(this);
+
+		// 만약, 핸들러 안에서 이벤트 대상이 되는 this(HTMLElement)의 CSS나 DOM 조작을 해야 하는 경우,
+		// 다시 jQuery($)의 파라미터로 전달해서 jQuery Object Wrapping 한다.
+		// this.style.color = "blue";
+		$(this).css("color", "blue");
+
+		//jQuery Object의 거의 모든 API 함수(travese API제외)는 호출한 jQuery Object를 다시 반환한다.
+		//따라서 함수 chain이 가능하다.
+		$(this).css("text-decoration", "underline").text("클릭!!!");
+   });
+});
+```
