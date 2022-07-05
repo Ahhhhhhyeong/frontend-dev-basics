@@ -2,7 +2,40 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Event Propagation(Bubbling)</title>
+<script>
+	window.addEventListener("load", function(){
+		document
+			.getElementById("outer-div")
+			.addEventListener("click", function(){
+				console.log("outer-div");
+			});
+
+		document
+			.getElementById("inner-div")
+			.addEventListener("click", function(){
+				console.log("Clicked inner-div");
+			});
+
+		document
+			.getElementById("header")
+			.addEventListener("click", function(e){
+				var event = e || window.event; // <= ie8
+
+				// stop propagtion(bubbling)
+				event.cancelBubble = true;						  // <= ie8
+				event.stopPropagation && event.stopPropagation(); //standard browser
+				
+				console.log("Clicked header");
+			});
+
+		document
+			.getElementById("text")
+			.addEventListener("click", function(){
+				console.log("Clicked text ");
+			});
+	});
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>

@@ -26,8 +26,7 @@ var BrowserDetect = {
     ...
 }
 ```
-=> 브라우저 서치하는 함수
-=> bloolean 타입으로 번질 수 있다. 
+=> 브라우저 서치하는 함수   
 
 ---
 # [용어정리](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/ch06/src/main/webapp/ex05.html)
@@ -92,3 +91,11 @@ var BrowserDetect = {
 
 1. anchor: 버튼이나 메뉴로 사용할 때(click event)
 2. form: validation (submit event)
+
+---
+# [Event Propagation(Event Bubbling)](https://github.com/Ahhhhhhyeong/frontend-dev-basics/blob/main/ch06/src/main/webapp/ex16.html)
+
+### 특정 이벤트가 발생했을 때, 그 이벤트가 상위 / 하위 엘리먼트로 전파되어 가는 것
+
+- IE8: outer-div > inner-div > header > text
+- 표준: outer-div < inner-div < header < text 
