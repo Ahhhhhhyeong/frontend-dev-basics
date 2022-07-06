@@ -17,6 +17,12 @@ $(function(){
 			type: "get",
 			dataType: "json",
 			success: function(response){
+				if(response.result === 'fail'){
+						console.error(response.message);
+						return;
+					};
+					
+				var vo = response.data;	
 				var htmls = "";
 				htmls += ("<h3>" + response.no + "</h3>");
 				htmls += ("<h4>" + response.name + "</h4>");
