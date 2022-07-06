@@ -1,0 +1,24 @@
+package com.douzone.ch08.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ApiTestController {
+	@RequestMapping("/text")
+	public String text() {
+		return "text";
+	}
+	
+	@RequestMapping("/html")
+	public String html() {
+		return "html";
+	}
+	
+	@RequestMapping("/json01")
+	public String json01() {
+		return "json01";
+	}
+	
+	
+}
