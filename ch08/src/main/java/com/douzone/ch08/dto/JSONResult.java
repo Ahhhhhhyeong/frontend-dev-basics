@@ -1,5 +1,6 @@
 package com.douzone.ch08.dto;
 
+import java.io.Console;
 
 public class JSONResult {
 	private String result; /* success or fail */
@@ -17,6 +18,7 @@ public class JSONResult {
 	}
 	
 	public static JSONResult success(Object data) {
+		System.out.println(data);
 		return new JSONResult(data);
 	}
 	
