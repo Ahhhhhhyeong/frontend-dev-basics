@@ -10,7 +10,8 @@
 const user = {
     firstName: '둘',
     lastName: '리',
-    email: 'dooly@gmail.com'
+    email: 'dooly@gmail.com',
+    
 }
 
 // let firstName = user.firstName;
